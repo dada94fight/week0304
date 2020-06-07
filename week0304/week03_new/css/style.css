@@ -1,0 +1,1127 @@
+/* ________________base____________________ */
+
+html {
+    font-size: 8px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”,
+        “Microsoft JhengHei”, Roboto, “Helvetica Neue”, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a,
+li,
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    /* 讓標題都是粗體 */
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'roboto';
+    font-size: 48px;
+}
+
+@media(max-width: 992px) {
+    h3 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 767px) {
+
+    h3 {
+        font-size: 24px;
+    }
+}
+
+h4 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+@media(max-width: 992px) {
+    h4 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 767px) {
+
+    h4 {
+        font-size: 20px;
+    }
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.container {
+    max-width: 1224px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 672px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 352px
+    }
+}
+
+/* ________________end-base____________________ */
+
+/* __________utililtes_start(功能性class)__________ */
+
+/* flex */
+.d-flex {
+    display: flex;
+}
+
+.flex-dr {
+    flex-direction: row;
+}
+
+.flex-drr {
+    flex-direction: row-reverse;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-jcc {
+    justify-content: center;
+}
+
+.flex-jcfe {
+    justify-content: flex-end;
+}
+
+.flex-jcfs {
+    justify-content: flex-start;
+}
+
+.flex-jcb {
+    justify-content: space-between;
+}
+
+.flex-jcsa {
+    justify-content: space-around;
+}
+
+.flex-jcbe {
+    justify-content: baseline;
+}
+
+.flex-aic {
+    align-items: center;
+}
+
+.flex-aib {
+    align-items: baseline;
+}
+
+.flex-aifs {
+    align-items: flex-start;
+}
+
+.flex-aice {
+    align-items: flex-end;
+}
+
+.flex-acc {
+    align-content: center;
+}
+
+/* center */
+
+.align-center {
+    text-align: center;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+
+/* margin-bottom  */
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-18 {
+    margin-bottom: 18px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-44 {
+    margin-bottom: 44px;
+}
+
+.mb-64 {
+    margin-bottom: 64px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+
+/* margin-right  */
+
+.mr-4 {
+    margin-right: 4px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+.mr-32 {
+    margin-right: 32px;
+}
+
+.mr-38 {
+    margin-right: 38px;
+}
+
+.mr-48 {
+    margin-right: 48px;
+}
+
+.mr-62 {
+    margin-right: 62px;
+}
+
+/* margin-left  */
+
+
+.ml-24 {
+    margin-left: 24px;
+}
+
+.ml-64 {
+    margin-left: 64px;
+}
+
+
+/* padding-top  */
+
+
+.pt-16 {
+    padding-top: 16px;
+}
+
+.pt-24 {
+    padding: 24px;
+}
+
+.pt-36 {
+    padding-top: 36px;
+}
+
+.pt-64 {
+    padding-top: 64px;
+}
+
+
+/* padding-bottom  */
+
+.pb-16 {
+    padding-bottom: 16px;
+}
+
+.pb-24 {
+    padding-bottom: 24px;
+}
+
+.pb-80 {
+    padding-bottom: 80px;
+}
+
+.pb-92 {
+    padding-bottom: 92px;
+}
+
+/* padding-right  */
+
+.pr-24 {
+    padding-right: 24px;
+}
+
+.pl-24 {
+    padding-left: 24px;
+}
+
+/* font-size */
+
+.fz2 {
+    /* font-size: 16px;*/
+    font-size: 2rem;
+
+}
+
+.fz2-5 {
+    /* font-size: 20px; */
+    font-size: 2.5rem;
+
+}
+
+.fz3 {
+    /* font-size: 24px; */
+    font-size: 3rem;
+
+}
+
+.fz4 {
+
+    /* font-size: 32px; */
+    font-size: 4rem;
+
+}
+
+.fz4-5 {
+    /* font-size: 36px; */
+    font-size: 4.5rem;
+
+}
+
+.fz6 {
+    /* font-size: 48px; */
+    font-size: 6rem;
+
+}
+
+.fz8 {
+    /* font-size: 64px; */
+    font-size: 8rem;
+
+}
+
+.fz9 {
+    font-size: 72px;
+}
+
+
+
+
+/* color  */
+
+.text-primary {
+    color: #AA0601;
+}
+
+.text-light {
+    color: #AA06010D;
+}
+
+.text-dark {
+    color: #650300;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+.bg-primary {
+    background-color: #AA0601;
+}
+
+.bg-light {
+    background-color: #AA06010D;
+}
+
+.bg-dark {
+    background-color: #650300;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+
+/* __________end-utililtes(功能性class)__________ */
+
+/* ____________________nav____________________ */
+.header {
+    padding: 30px 88px 30px 88px;
+}
+
+.header-hamMenu {
+    display: none;
+}
+
+
+
+@media (max-width: 992px) {
+    .header {
+        /* 改成平板的距離 */
+        padding: 30px 48px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .header {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    /* logo手機版的尺寸 */
+    .header-logo {
+        width: 48px;
+        height: 30px;
+    }
+
+    .header-menu__item {
+        /* 把原本網頁版menu物件關掉 */
+        display: none;
+    }
+
+    .header-hamMenu {
+        /* 打開手機版的漢堡表單     */
+        display: block;
+        /* 定位在header上就不影響jcc的置中 */
+        position: absolute;
+        left: 13px;
+        width: 24px;
+    }
+}
+
+/* ____________________end-nav____________________ */
+
+/* ____________________banner____________________ */
+
+/* 把圖片定在最外層當背景section */
+.banner {
+    height: 840px;
+    background-image: url(../img/68.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner-text {
+    text-align: right;
+}
+
+@media (max-width: 992px) {
+    .banner-text__subtitle {
+        font-size: 3rem;
+    }
+
+    .banner-text__text__title {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .banner {
+        height: 840px;
+        background-image: url(../img/68@2x.png);
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .banner-text__subtitle {
+        font-size: 2rem;
+    }
+
+    .banner-text__title {
+        font-size: 4rem;
+    }
+}
+
+/* ____________________end-banner____________________ */
+
+/* ____________________flowchart____________________ */
+
+
+
+.flowchart-content__item {
+    width: 25%;
+    padding: 16px 37px 24px 37px;
+}
+
+@media (max-width: 992px) {
+
+    .flowchart-title {
+        font-size: 4rem;
+    }
+
+    .flowchart-content {
+        margin-right: 3rem;
+    }
+
+    .flowchart-content__item {
+        width: 50%;
+    }
+
+    .flowchart-content__item h5 {
+        font-size: 2.5rem;
+
+    }
+}
+
+@media (max-width: 767px) {
+
+    .flowchart-title {
+        font-size: 3rem;
+    }
+
+
+    .flowchart-content__item {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+}
+
+.flowchart-content__item img {
+    width: 100px;
+    height: 100px;
+}
+
+/* ____________________end-flowchart____________________ */
+
+/* ____________________classic____________________ */
+
+
+
+.classic-content__itemImg {
+    max-width: 60%;
+}
+
+.classic-content__itemSubitile {
+    max-width: 40%;
+}
+
+.classic-content__itemSubitile img {
+    /* icon寬高 */
+    width: 48px;
+    height: 48px;
+}
+
+.icon-white {
+    /* 把白色icon隱藏 */
+    display: none;
+}
+
+
+@media (max-width: 992px) {
+
+    /* 原本反轉的照片轉回來 */
+    .classic-content__item:nth-child(2) {
+        flex-direction: row;
+    }
+
+    /* 對齊圖片距離 */
+    .classic-content__itemImg {
+        margin-right: 36px;
+        margin-left: 0;
+    }
+
+    .classic-content__itemSubitile {
+        max-width: 40%;
+    }
+
+    .classic-content__itemImg {
+        max-width: 60%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    /* 把上一個區塊往下得距離改小 */
+    .flowchart-block {
+        margin-bottom: 24px;
+    }
+
+    /* 把上一個區塊往下得距離改小 */
+    .classic-title {
+        margin-bottom: 16px;
+    }
+
+    /* 經典的照片往下推 */
+    .classic-content__item {
+
+        /* 把原本照片的對齊邊邊改成對齊中間 */
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+
+    /* 文字定位在照片上 */
+    .classic-content {
+        position: relative;
+    }
+
+    /* 把文字定位在照片上 */
+    .classic-content__itemSubtitle {
+        max-width: 100%;
+        color: white;
+        position: absolute;
+    }
+
+
+    .classic-content__itemImg {
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    /* 把原本隱藏的icon打開 */
+    .icon-white {
+        display: block;
+    }
+
+    .icon-red {
+        display: none;
+    }
+
+    .icon-white {
+        width: 32px;
+        height: 32px;
+    }
+
+}
+
+/* ____________________end-classic____________________ */
+
+
+/* ____________________crossover____________________ */
+
+.corossover-block {
+    background-image: url(../img/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 400px;
+}
+
+
+.album-container {
+    max-width: 1524px;
+    margin: 0 auto;
+}
+
+
+.more {
+    align-self: flex-end;
+    margin-right: 12%;
+}
+
+.more img {
+    max-width: 100;
+}
+
+.crossover-product {
+    position: relative;
+}
+
+
+.crossover-product__item__title {
+    margin: 0 auto;
+    position: absolute;
+    margin: -350px 0 0 160px;
+}
+
+
+@media (max-width: 992px) {
+
+
+    .album-container {
+        max-width: 872px;
+    }
+
+    .more img {
+        max-height: 95px;
+    }
+
+    .colorwomen {
+        margin-bottom: 3px;
+    }
+   
+    .crossover-product__item__title{
+    margin: -165px 0 0 90px;
+    font-size: 32px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .crossover-product{
+        display: flex;
+        flex-direction: column;  
+        margin-bottom: 24px;
+      }
+
+    .crossover-product__item{
+        width: 100%;
+    }
+
+    .crossover-product__item:nth-child(1){
+        margin-bottom: 20px;
+    }
+
+    .album-container {
+        max-width: 552px
+    }
+
+    .more img {
+        max-height: 60px;
+    }
+    .crossover-product__item__title{
+    margin: -180px 0 0 110px;
+        
+    }
+
+}
+
+
+
+
+.crossover-product__item {
+    background-color: #fff;
+
+}
+
+.crossover-product__item__Img {
+    opacity: .7;
+    margin-right: 5%;
+}
+
+
+
+
+/* ____________________end-crossover____________________ */
+
+
+
+
+
+
+
+
+
+
+/* ____________________recommend____________________ */
+
+.recommend-block {
+    margin-top: -340px;
+
+}
+
+.recommend-content__item {
+    max-width: 23.5%;
+}
+
+.recommend-content__item:nth-child(1),
+.recommend-content__item:nth-child(2),
+.recommend-content__item:nth-child(3) {
+    margin-right: 2%;
+}
+
+.recommend-content__itemText {
+    padding: 16px;
+    border: 1px solid #DEE2E6;
+
+}
+
+@media (max-width: 992px) {
+    .recommend-content__item {
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .recommend-content__item {
+        max-width: 98%;
+        margin-bottom: 16px;
+    }
+}
+
+/* ____________________end-recommend____________________ */
+
+
+
+/* ____________________fillin____________________ */
+
+
+.fillin-form {
+    max-width: 66%;
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .fillin-form {
+        max-width: 74%;
+    }
+}
+
+@media (max-width: 767px) {
+    .fillin-form {
+        max-width: 93%;
+    }
+}
+
+
+.fillin-form__text {
+    padding: 14px;
+    border: 1px solid #000000;
+    background-color: #AA06010D;
+    /* 功能 */
+    /* margin-bottom: 16px; */
+}
+
+.fillin-form__textarea {
+    /* 要改透明度 */
+    background-color: #AA06010D;
+    padding: 14px;
+}
+
+/* 把點擊會出現的籃框消除掉 */
+.fillin-form__text,
+.fillin-form__textarea,
+.fillin-button {
+    outline: 0;
+}
+
+
+/* 以下是確認框框樣式設定 */
+
+/* Customize the label (the container) */
+.check-container {
+    /* font-size: 2rem; */
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 48px;
+
+}
+
+/* Hide the browser's default checkbox */
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input~.checkmark {
+    background-color: #AA06010D;
+    border: 1px solid #000;
+
+
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked~.checkmark {
+    background-color: #AA06010D;
+    border: 1px solid #000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.check-container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-container .checkmark:after {
+
+    left: 8px;
+    top: 2px;
+    bottom: 5px;
+    width: 8px;
+    height: 15px;
+    border: solid rgb(26, 26, 26);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* end 確認框框樣式設定 */
+
+.fillin-button {
+    max-width: 190px;
+    margin: 0 auto;
+    padding: 16px 58px 16px 58px;
+    border:none;
+}
+
+/* ____________________end-fillin____________________ */
+
+/* ____________________contact____________________ */
+
+
+.contact-content {
+    border-bottom: 1px solid white;
+}
+
+.contact-content__text {
+    font-size: 4.5rem;
+}
+
+.contact-content__text img {
+    width: 36px;
+}
+
+.contact-footer__menu__logo {
+    display: none;
+}
+
+@media (max-width: 992px) {
+
+    .contact-header__menu__item {
+        margin-right: 40px;
+    }
+
+    .contact-header__social__item {
+        width: 24px;
+        height: 24px;
+    }
+
+    .contact-header__social__item:nth-child(1),
+    .contact-header__social__item:nth-child(2) {
+        margin-right: 24px;
+    }
+
+    .contact-footer__content__item img {
+        display: none;
+    }
+
+    .contact-content__text {
+        font-size: 20px;
+    }
+
+    .contact-content__text:nth-child(1) {
+        margin-bottom: 11px;
+    }
+
+    .contact-content__text img {
+        width: 23px;
+        height: 23px;
+        margin-right: 12px;
+    }
+
+    .contact-footer__content__item img {
+        margin-right: 8px;
+    }
+
+
+
+}
+
+@media (max-width: 767px) {
+
+    .contact-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-header__menu {
+        display: none;
+    }
+
+    .contact-footer__content__item {
+        margin-bottom: 8px;
+    }
+
+    .contact-footer__menu__logo {
+        display: block;
+        width: 46px;
+        height: 27px;
+    }
+
+    .contact-footer__menu {
+        flex-direction: column;
+    }
+
+    .contact-footer__menu__item:nth-child(1) {
+        margin-bottom: 8px;
+    }
+
+    .forphone-contact-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+
+}
+
+
+/* ____________________end-contact____________________ */
+
+
+/* ____________________faq____________________ */
+
+.faq-banner {
+    height: 340px;
+    background-image: url(../img/72.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.faq-content__items {
+    border: 1px solid black;
+}
+
+.faq-content__items:nth-child(1),
+.faq-content__items:nth-child(2),
+.faq-content__items:nth-child(3),
+.faq-content__items:nth-child(4),
+.faq-content__items:nth-child(5),
+.faq-content__items:nth-child(6) {
+    border-bottom: none;
+}
+
+
+@media (max-width: 992px) {
+    .faq-banner{
+        margin-bottom: 40px;
+    }
+    .help-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .faq-title {
+        font-size: 48px;
+    }
+
+    .faq-content__title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    .faq-content {
+        margin-bottom: 56px;
+    }
+
+    .faq-banner {
+        height: 143px;
+        margin-bottom: 24px;
+    }
+
+    .faq-title {
+        font-size: 28px;
+    }
+
+    .faq-content__title {
+        font-size: 20px;
+    }
+
+    .help-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+}
+
+/* ____________________end-faq____________________ */
